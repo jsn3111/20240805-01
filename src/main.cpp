@@ -41,7 +41,7 @@ void uartSetup(unsigned long baud) {
 }
 
 int bleSetup() {
-  if(!SerialBT.begin("DroneBTSeason4")) {
+  if(!SerialBT.begin("DroneBT20240805-01")) {
     Serial.println("Failed Bluetooth Initializing!!!");
     return -1;
   }

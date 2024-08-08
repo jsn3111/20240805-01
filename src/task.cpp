@@ -16,10 +16,10 @@ void Task1Code(void *pvParameters) {
         // xTaskDelayUntil(&getTick, vPeriodicTaskPeriod);
 
         ledDly++;
-        if(ledDly == 100) {
+        if(ledDly == 500) {
             digitalWrite(ledPin, HIGH);
         }
-        else if(ledDly >= 200) {
+        else if(ledDly >= 1000) {
             digitalWrite(ledPin, LOW);
             ledDly = 0;
         }
